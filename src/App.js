@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+ 
+import 'antd/dist/antd.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Alert } from 'antd'; 
+
+export default function App() { 
+return ( 
+	<div style={{ 
+	display: 'block', width: 700, padding: 30 
+	}}> 
+	<h4>ReactJS Ant-Design Alert Component</h4> 
+	<Alert message="This is a Success Alert" type="success" /> 
+	<Alert message="This is a Error Alert" type="error" /> 
+	<Alert message="This is a Warning Alert" type="warning" /> 
+	<Alert message="This is a Info Alert" type="info" /> 
+	</div> 
+); 
 }
-
-export default App;
